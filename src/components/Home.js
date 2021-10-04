@@ -27,13 +27,11 @@ Item.propTypes = {
 
 function Home(props) {
     return (
-        <>
-            <div style={{width: '100%'}}>
-                <Box sx={{display: 'grid', gridTemplateRows: 'repeat(3, 1fr)'}}>
-                    <Item><span className="animated_text">Lift Board Game</span></Item>
-                </Box>
-            </div>
-        </>
+        <div style={{width: '100%'}}>
+            <Box sx={{display: 'grid', gridTemplateRows: 'repeat(3, 1fr)'}}>
+                <Item><span className="animated_text">Lift Board Game</span></Item>
+            </Box>
+        </div>
     );
 }
 
