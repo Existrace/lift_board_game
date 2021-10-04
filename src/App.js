@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 import BrowseGames from "./components/BrowseGames";
 import JoinRoom from "./components/JoinRoom";
+import CreateRoom from "./components/CreateRoom";
 
 
 function App() {
@@ -19,15 +20,7 @@ function App() {
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/browse_game' component={BrowseGames}/>
                     <Route exact path='/join_room' component={JoinRoom}/>
-                    {/*<Route path='/normal/:room/:gameid/:user/:maxpodium' component={GameRoom}/>
-                    <Route path='/multi/:room/:gameid/:user/:maxpodium' component={MultiGameRoom}/>
-                    <Route path='/newquiz' component={NewQuiz}/>
-                    <Route path='/new-multi-quiz' component={NewMultiQuiz}/>
-                    <Route path='/browsequizzes/:gamemode' component={BrowseQuizes}/>
-                    <Route path='/roomleave' component={AfterRoomLeave}/>
-                    <Route path='/gamefinsihed/:room/:user' component={GameEnded}/>
-                    <Route path='/quiz/normal/:code' component={ViewQuiz}/>
-                    <Route path='/quiz/multi/:code' component={ViewMultiQuiz}/>*/}
+                    <Route exact path='/create_room' component={CreateRoom}/>
                 </Switch>
             </div>
         </Router>
