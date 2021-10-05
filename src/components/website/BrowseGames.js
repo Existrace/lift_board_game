@@ -1,7 +1,8 @@
 import React from 'react';
 import {Box, Card, CardActionArea, CardActions, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import picture_detective_club from '../img/detective-club/detective_club_picture.jpg'
+import picture_detective_club from '../../img/detective-club/detective_club_picture.jpg'
+import pdf from '../../pdf/78-detective-club-regle.pdf'
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 import Button from "@material-ui/core/Button";
@@ -62,7 +63,7 @@ function BrowseGames() {
                                 Detective Club
                             </Typography>
                             <Typography variant="body2" color="text.secondary" align="justify">
-                                Une nouvelle fois, le Detective Club ouvre ses portes à de nouveaux membres. 
+                                Une nouvelle fois, le Detective Club ouvre ses portes à de nouveaux membres.
 								Pour pouvoir l'intégrer, il va falloir montrer de quoi vous êtes capable.<br/><br/>
 								Analysez les preuves, écoutez les témoins et identifiez qui dans le groupe ment à tous les autres.<br/>
                                 Seul le plus observateur et le plus rusé remportera la victoire. Bienvenue au Detective Club !
@@ -75,11 +76,10 @@ function BrowseGames() {
                                 Rejoindre une salle
                             </Link>
                         </Button>
-                        <Button size="small" color="primary" component={Link} to="/join_room">
-                            <Link style={navStyle} to="/join_room">
-                                Fiche du jeu
-                            </Link>
+                        <Button size="small" color="primary">
+                            <a style={navStyle}  href = {pdf} target = "_blank">Télécharger règles du jeu</a>
                         </Button>
+
                     </CardActions>
                 </Card>
             </Box>
