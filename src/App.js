@@ -2,11 +2,11 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './style/animated_text.css';
 import './style/background.css';
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-import BrowseGames from "./components/BrowseGames";
-import JoinRoom from "./components/JoinRoom";
-import CreateRoom from "./components/CreateRoom";
+import Home from "./components/website/Home";
+import Nav from "./components/website/Nav";
+import BrowseGames from "./components/website/BrowseGames";
+import JoinRoom from "./components/website/JoinRoom";
+import CreateRoom from "./components/website/CreateRoom";
 
 
 function App() {
