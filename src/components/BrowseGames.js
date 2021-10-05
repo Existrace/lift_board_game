@@ -1,16 +1,20 @@
 import React from 'react';
 import {Box, Card, CardActionArea, CardActions, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import picture_detective_club from '../img/detective-club/detective_club_picture.jpg'
 import PropTypes from "prop-types";
-import {Link} from "@mui/material";
+import {Link} from "react-router-dom";
+import Button from "@material-ui/core/Button";
 
 let cardStyle = {
     display: 'block',
     width: '30vw',
     transitionDuration: '0.3s',
     height: '20vw'
+}
+
+const navStyle = {
+    textDecoration: 'none'
 }
 
 function Item(props) {
@@ -35,7 +39,6 @@ function Item(props) {
 Item.propTypes = {
     sx: PropTypes.object,
 };
-
 
 function BrowseGames() {
 
@@ -67,16 +70,16 @@ function BrowseGames() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Link to='/browse_game'>
-                            <Button color="inherit">
-                                Détails
-                            </Button>
-                        </Link>
-                        <Link to='/join_room'>
-                            <Button color="inherit">
+                        <Button size="small" color="primary" component={Link} to="/join_room">
+                            <Link style={navStyle} to="/join_room">
                                 Rejoindre une salle
-                            </Button>
-                        </Link>
+                            </Link>
+                        </Button>
+                        <Button size="small" color="primary" component={Link} to="/join_room">
+                            <Link style={navStyle} to="/join_room">
+                                Fiche du jeu
+                            </Link>
+                        </Button>
                     </CardActions>
                 </Card>
             </Box>
