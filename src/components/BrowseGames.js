@@ -10,7 +10,7 @@ let cardStyle = {
     display: 'block',
     width: '30vw',
     transitionDuration: '0.3s',
-    height: '20vw'
+    height: 'auto'
 }
 
 const navStyle = {
@@ -61,10 +61,10 @@ function BrowseGames() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Detective Club
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2" color="text.secondary" align="justify">
                                 Une nouvelle fois, le Detective Club ouvre ses portes à de nouveaux membres. 
-								Pour pouvoir l'intégrer, il va falloir montrer de quoi vous êtes capable. 
-								Analysez les preuves, écoutez les témoins et identifiez qui dans le groupe ment à tous les autres.
+								Pour pouvoir l'intégrer, il va falloir montrer de quoi vous êtes capable.<br/><br/>
+								Analysez les preuves, écoutez les témoins et identifiez qui dans le groupe ment à tous les autres.<br/>
                                 Seul le plus observateur et le plus rusé remportera la victoire. Bienvenue au Detective Club !
                             </Typography>
                         </CardContent>
