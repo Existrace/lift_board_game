@@ -59,15 +59,10 @@ function BrowseGames() {
                                 Detective Club
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Comme Chaque année, le Détective Club ouvre ses portes à de nouveaux membres. Pour
-                                pouvoir
-                                l'intégrer,
-                                il va falloir montrer de quoi vous êtes capable. Analysez les preuves, écoutez les
-                                témoins
-                                et identifiez qui dans le groupe ment à tous les autres.
-                                Seul le plus observateur et le plus rusé remportera la victoire. Bienvenue au Détective
-                                Club
-                                !!
+                                Une nouvelle fois, le Detective Club ouvre ses portes à de nouveaux membres. 
+								Pour pouvoir l'intégrer, il va falloir montrer de quoi vous êtes capable. 
+								Analysez les preuves, écoutez les témoins et identifiez qui dans le groupe ment à tous les autres.
+                                Seul le plus observateur et le plus rusé remportera la victoire. Bienvenue au Detective Club !
                             </Typography>
                         </CardContent>
                     </CardActionArea>
