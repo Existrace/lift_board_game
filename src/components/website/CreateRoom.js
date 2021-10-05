@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Card, CardActions, CardContent, InputLabel, MenuItem, Select, TextField} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import CasinoIcon from "@mui/icons-material/Casino";
-import * as utils from '../utils/utils_generate_code';
+import * as utils from '../../utils/utils_generate_code';
 
 /*List of all games available*/
 const games = [
