@@ -2,10 +2,11 @@ import React from 'react';
 import {Box, Card, CardActionArea, CardActions, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import picture_detective_club from '../../img/detective-club/detective_club_picture.jpg'
-import pdf from '../../pdf/78-detective-club-regle.pdf'
+import pdf from '../../pdf/detectiive_club/Règles du jeu Détective Club.pdf'
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import {Divider} from "@mui/material";
 
 let cardStyle = {
     display: 'block',
@@ -62,12 +63,17 @@ function BrowseGames() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Detective Club
                             </Typography>
+                            <Typography gutterBottom variant="p" component="div" style={{fontWeight: 'bold'}}>
+                                4 - 8 Joueurs
+                            </Typography>
+                            <Divider/>
                             <Typography variant="body2" color="text.secondary" align="justify">
                                 Une nouvelle fois, le Detective Club ouvre ses portes à de nouveaux membres.
 								Pour pouvoir l'intégrer, il va falloir montrer de quoi vous êtes capable.<br/><br/>
 								Analysez les preuves, écoutez les témoins et identifiez qui dans le groupe ment à tous les autres.<br/>
                                 Seul le plus observateur et le plus rusé remportera la victoire. Bienvenue au Detective Club !
                             </Typography>
+                            <Divider/>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
