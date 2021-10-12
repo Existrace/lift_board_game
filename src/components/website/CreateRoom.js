@@ -1,9 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Card, CardActions, CardContent, InputLabel, MenuItem, Select, TextField} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import CasinoIcon from "@mui/icons-material/Casino";
 import * as utils from '../../utils/utils_generate_code';
-import {Divider, Typography} from "@mui/material";
+import {Typography} from "@mui/material";
+import Room from "../games/Room";
+import {Redirect} from "react-router-dom";
 
 
 /*List of all games available*/
@@ -14,25 +15,33 @@ const games = [
 function CreateRoom() {
 
     const [gameCode, setGameCode] = useState('')
-
     const inputRef = React.useRef(null)
-
-    function generateCode() {
-        let random = utils.makeid(15)
-        setGameCode(random)
-    }
 
     useEffect(() => {
             generateCode()
         }, []
     )
 
+    let goToRoom = false;
+    if (goToRoom) {
+        let gameTest = "Detective Club"
+        return <Redirect push to={`/room/${gameTest}/${gameCode}`}/>
+    }
+
+    function generateCode() {
+        let random = utils.makeid(15)
+        setGameCode(random)
+    }
+
+    // Création de la salle (room)
     const handleClick = () => {
         /* Ne fonctionne pas encore */
         const value = inputRef.current.value;
         console.log(value)
-    }
 
+        // FONCTIONNE PAS // REGARDER POURQUOI
+        goToRoom = true
+    }
 
     return (
         <div style={{

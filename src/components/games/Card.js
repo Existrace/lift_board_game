@@ -1,14 +1,14 @@
 import React from 'react';
 
-export default class Card {
+const Card = ({numCard}) => {
 
-	const number;
-	
-	function getNumero() {
-		return number;
-	}
-	
-	function setNumero(newNumero) {
-		number = newNumero;
-	}
+	return (
+		<div>
+			<img src={require(`../../img/detective-club/game_card/${numCard}.png`)}  alt={`card-${numCard}`}/>
+		</div>
+	);
 }
+
+export default Card
+
+

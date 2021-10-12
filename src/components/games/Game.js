@@ -1,41 +1,46 @@
 import React from 'react';
+import {Typography} from "@mui/material";
 
-export default class Game {
+export default class Game extends React.Component {
+    constructor(props) {
+        super(props);
 
-	const name;
-	
-	const pile;
-	
-	function getName() {
-		return name;
-	}
-	
-	function setName(newName) {
-		name = newName;
-	}
-	
-	function getPile() {
-		return pile;
-	}
-	
-	function setPile(newPile) {
-		pile = newPile;
-	}
-	
-	function addCard(card) {
-		// Fonction pour ajouter une carte à la pile
-		
-	}
-	
-	function drawCard() {
-		// Fonction pour piocher une carte
-		
-		
-		return card;
-	}	
-	
-	function mixCards() {
-		// Fonction pour mélanger la pile de cartes
-		
-	}
-} 
+        this.state = {
+            // Nom du jeu
+            gameName: props.gameName,
+            // La pile des cartes ?
+            pile: ''
+        };
+    }
+
+    addCard(card) {
+        // Fonction pour ajouter une carte à la pile
+
+    }
+
+    drawCard() {
+        // Fonction pour piocher une carte
+
+
+        //return card;
+    }
+
+    mixCards() {
+        // Fonction pour mélanger la pile de cartes
+
+    }
+
+    render() {
+        return (
+            <div>
+                <Typography variant="title3" gutterBottom component="div" style={{paddingTop: 20}}>
+                    Hello, <br/>
+                    {this.props.gameName}
+                </Typography>
+            </div>
+        )
+    }
+}
+
+
+
