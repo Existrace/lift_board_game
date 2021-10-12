@@ -8,7 +8,7 @@ import BrowseGames from "./components/website/BrowseGames";
 import JoinRoom from "./components/website/JoinRoom";
 import CreateRoom from "./components/website/CreateRoom";
 import Game from "./components/games/Game";
-import Room from "./components/games/Room";
+import GamingRoom from "./components/games/GamingRoom";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                     <Route exact path='/browse_game' component={BrowseGames}/>
                     <Route exact path='/join_room' component={JoinRoom}/>
                     <Route exact path='/create_room' component={CreateRoom}/>
-                    <Route exact path='/room/:game_name/:code' component={Room}/>
+                    <Route exact path='/room/:game_name/:code' component={GamingRoom}/>
                     {/*<Route exact path="/play"><Game gameName='Detective Club'/></Route>*/}
                 </Switch>
             </div>

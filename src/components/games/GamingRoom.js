@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Typography} from "@mui/material";
 
-/*export default class Room {
+/*export default class GamingRoom {
 
 	const code;
 
@@ -39,7 +39,7 @@ import {Typography} from "@mui/material";
 	}
 }*/
 
-class Room extends Component {
+class GamingRoom extends Component {
 	constructor(props) {
 		super(props);
 
@@ -67,4 +67,4 @@ class Room extends Component {
 	}
 }
 
-export default Room;
+export default GamingRoom;

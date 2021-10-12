@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({numCard}, {gameName}) => {
+const GameCard = ({numCard}, {gameName}) => {
 
 	function formatGameName(gameName) {
 		return gameName.toLowerCase().replace(" ", "-");
@@ -15,6 +15,6 @@ const Card = ({numCard}, {gameName}) => {
 	);
 }
 
-export default Card
+export default GameCard
 
 

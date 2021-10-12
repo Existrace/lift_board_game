@@ -3,7 +3,7 @@ import {Card, CardActions, CardContent, InputLabel, MenuItem, Select, TextField}
 import Button from "@material-ui/core/Button";
 import * as utils from '../../utils/utils_generate_code';
 import {Typography} from "@mui/material";
-import Room from "../games/Room";
+import GamingRoom from "../games/GamingRoom";
 import {Redirect} from "react-router-dom";
 
 
